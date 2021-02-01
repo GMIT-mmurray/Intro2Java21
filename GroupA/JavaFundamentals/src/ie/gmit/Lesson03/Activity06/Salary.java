@@ -1,7 +1,7 @@
 package ie.gmit.Lesson03.Activity06;
 
 public class Salary {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int workerhours = 10;
         double salary = 0;
         if (workerhours <= 8) {
