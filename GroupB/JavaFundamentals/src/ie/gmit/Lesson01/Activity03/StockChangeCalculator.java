@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class StockChangeCalculator {
 
-
-
-  public static void main(String[] args) {
+public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter the stock symbol: ");
     String symbol = sc.nextLine();

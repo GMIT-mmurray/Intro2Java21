@@ -3,10 +3,9 @@ package ie.gmit.Lesson02.Activity05;
 import java.util.Scanner;
 
 public class PeachCalculator {
-
+  static Scanner sc = new Scanner(System.in);
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
     System.out.print("Enter the number of peaches picked: ");
     int numberOfPeaches = sc.nextInt();
     int numberOfFullBoxes = numberOfPeaches / 20;

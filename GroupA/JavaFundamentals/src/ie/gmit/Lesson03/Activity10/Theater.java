@@ -15,10 +15,7 @@ public class Theater {
         request = 0;
       } else {
         System.out.println("Sorry your request could not be processed");
-        if (remaining > 0) {
-          continue;
-        }else
-          break;
+        break;
       }
     }
   }

@@ -9,7 +9,7 @@ public class Main {
     System.out.println("Enter a Number: ");
     int num1 = sc.nextInt();
     System.out.println("Entered value is: " + num1);
-    float fl1 = (float) num1;
+    float fl1 = (float)num1;
     System.out.print("Entered value as a floating point variable is: " + fl1);
   }
 }

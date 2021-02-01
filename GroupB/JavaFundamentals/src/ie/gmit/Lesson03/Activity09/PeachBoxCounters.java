@@ -12,9 +12,9 @@ public class PeachBoxCounters {
 
     while (numberOfPeaches >= 20) {
       numberOfPeaches -= 20;
-      numberOfBoxesShipped += 1;
-      System.out.printf("%d boxes shipped, %d peaches remaining\n",
-          numberOfBoxesShipped, numberOfPeaches);
+      numberOfBoxesShipped++;
+      System.out.printf("%d boxes shipped, %d peaches remaining\n", numberOfBoxesShipped, numberOfPeaches);
     }
   }
 }
+
