@@ -10,7 +10,7 @@ public class Salary {
         else if ((workerhours > 8) && (workerhours < 12)) {
             salary = 8 * 10 + (workerhours - 8) * 12;
         }
-        else {
+        else  {
             salary = 160;
         }
         System.out.println("The worker's salary is " + salary);
