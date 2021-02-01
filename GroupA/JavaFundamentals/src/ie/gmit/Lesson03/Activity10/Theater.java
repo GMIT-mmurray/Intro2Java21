@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Theater {
   public static void main(String[] args) {
     int total = 10, request = 0, remaining = 10;
-    while (remaining >= 0) {
+    while (remaining > 0) {
       System.out.println("Enter the number of tickets");
       Scanner in = new Scanner(System.in);
       request = in.nextInt();
@@ -15,7 +15,11 @@ public class Theater {
         request = 0;
       } else {
         System.out.println("Sorry your request could not be processed");
-        break;
+        if (remaining > 0) {
+          continue;
+        } else {
+          break;
+        }
       }
     }
   }
