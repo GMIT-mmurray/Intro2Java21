@@ -21,6 +21,7 @@ public class PeachBoxCount {
         System.out.printf("%d boxes shipped, %d peaches remaining\n",
             numberOfBoxesShipped, numberOfPeaches);
       }
+     //numberOfBoxesShipped = 0;
     }
   }
 }

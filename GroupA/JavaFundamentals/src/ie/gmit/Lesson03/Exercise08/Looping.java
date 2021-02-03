@@ -6,7 +6,7 @@ public class Looping {
     for (int i = 0; i <= 9; i++)
       System.out.println(i);
     System.out.println("Decreasing order");
-    for (int k = 9; k >= 0; k--)
-      System.out.println(k);
+    for (int i = 9; i >= 0; i--)
+      System.out.println(i);
   }
 }

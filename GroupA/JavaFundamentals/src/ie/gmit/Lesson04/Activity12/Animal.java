@@ -44,7 +44,6 @@ public class Animal {
 
     goat.setName("Goat");
     goat.setFamily("Bovidae");
-
     duck.setName("Duck");
     duck.setFamily("Anatidae");
 

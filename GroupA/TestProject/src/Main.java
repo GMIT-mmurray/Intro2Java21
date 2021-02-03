@@ -1,7 +1,10 @@
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.printf("Hello Github again");
+        Date date = new Date();
+        System.out.printf(date.toString());
     }
 }
