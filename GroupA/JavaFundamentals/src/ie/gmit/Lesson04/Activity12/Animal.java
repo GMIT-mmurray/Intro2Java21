@@ -1,6 +1,6 @@
 package ie.gmit.Lesson04.Activity12;
 
-public class Animal {
+public class Animal  {
 
   private int legs;
   private int ears;
@@ -16,6 +16,14 @@ public class Animal {
     this.legs = legs;
     this.ears = ears;
     this.eyes = ears;
+  }
+
+  public Animal(int legs, int ears, int eyes, String family, String name) {
+    this.legs = legs;
+    this.ears = ears;
+    this.eyes = eyes;
+    this.family = family;
+    this.name = name;
   }
 
   public String getFamily() {

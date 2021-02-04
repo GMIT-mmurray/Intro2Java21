@@ -1,6 +1,6 @@
 package ie.gmit.Lesson04.Activity14;
 
-public class Operator {
+public class Operator extends Object {
 
   public final String operator;
 
