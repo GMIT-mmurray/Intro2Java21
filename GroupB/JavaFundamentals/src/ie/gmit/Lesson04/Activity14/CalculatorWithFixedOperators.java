@@ -9,15 +9,17 @@ public class CalculatorWithFixedOperators {
   private final Operator operator;
 
   // All possible operations
-  private final Division division = new Division();
-  private final Multiplication multiplication = new Multiplication();
-  private final Operator sum = new Operator();
-  private final Subtraction subtraction = new Subtraction();
 
 
   public CalculatorWithFixedOperators(double operand1, double operand2, String operator) {
     this.operand1 = operand1;
     this.operand2 = operand2;
+
+     Division division = new Division();
+     Multiplication multiplication = new Multiplication();
+     Operator sum = new Operator();
+     Subtraction subtraction = new Subtraction();
+
 
     if (subtraction.matches(operator)) {
       this.operator = subtraction;
