@@ -26,5 +26,7 @@ public class TestAnimal {
         System.out.println(duck.getFamily());
         System.out.println(dog.getName()+" "+dog.getLegs());
         System.out.println(cat.getName()+" "+cat.getLegs());
+        System.out.println(dog);
+        System.out.println(duck);
     }
 }

@@ -44,6 +44,24 @@ public class Animal  {
 
   public int getLegs() { return legs; }
 
-  public void setLegs(int legs) { this.legs = legs;
+  public void setLegs(int legs) { this.legs = legs; }
+
+  public int getEars() {  return ears;  }
+
+  public void setEars(int ears) { this.ears = ears;  }
+
+  public int getEyes() { return eyes; }
+
+  public void setEyes(int eyes) { this.eyes = eyes;  }
+
+  @Override
+  public String toString() {
+    return "Animal{" +
+            "legs=" + legs +
+            ", ears=" + ears +
+            ", eyes=" + eyes +
+            ", family='" + family + '\'' +
+            ", name='" + name + '\'' +
+            '}';
   }
 }
