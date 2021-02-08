@@ -13,7 +13,7 @@ public class Operator extends Object {
   }
 
   public boolean matches(String toCheckFor) {
-    return this.operator.equals(toCheckFor);
+    return operator.equals(toCheckFor);
   }
 
   public double operate(double operand1, double operand2) {
