@@ -86,7 +86,7 @@ public class CommissionEmployee
    // calculate earnings
    public double earnings()
    {
-      return getCommissionRate() * getGrossSales();
+      return commissionRate * grossSales;
    } 
 
    // return String representation of CommissionEmployee object
@@ -94,9 +94,9 @@ public class CommissionEmployee
    public String toString()
    {
       return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", 
-         "commission employee", getFirstName(), getLastName(), 
-         "social security number", getSocialSecurityNumber(), 
-         "gross sales", getGrossSales(), 
+         "commission employee", firstName, lastName,
+         "social security number", socialSecurityNumber,
+         "gross sales", grossSales,
          "commission rate", getCommissionRate());
    } 
 } // end class CommissionEmployee
