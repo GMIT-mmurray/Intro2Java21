@@ -68,6 +68,6 @@ public class Point {
     }
     /** Returns the distance from this instance to (0,0). Invoke via p1.distance() */
     public double distance() {
-        return Math.sqrt(this.x*this.x + this.y*this.y);
+         return Math.sqrt(this.x*this.x + this.y*this.y);
     }
 }

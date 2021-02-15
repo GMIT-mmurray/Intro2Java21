@@ -80,4 +80,8 @@ public class Line {
     public double getLength() {
         return begin.distance(end);  // use Point's distance() method
     }
+
+    public double getGradient() {
+        return Math.atan((end.getY() - begin.getY()) / (end.getX() - begin.getX()));
+    }
 }
