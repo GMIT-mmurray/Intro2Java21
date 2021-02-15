@@ -38,14 +38,14 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
     // calculate earnings
     @Override
     public double earnings() {
-        return getBaseSalary() + super.earnings();
+        return baseSalary + super.earnings();
     }
 
     // return String representation of BasePlusCommissionEmployee
     @Override
     public String toString() {
         return String.format("%s %s%n%s: %.2f", "base-salaried",
-                super.toString(), "base salary", getBaseSalary());
+                super.toString(), "base salary", baseSalary);
     }
 } // end class BasePlusCommissionEmployee
 

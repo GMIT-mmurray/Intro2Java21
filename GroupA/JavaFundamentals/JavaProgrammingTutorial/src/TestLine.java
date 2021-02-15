@@ -49,8 +49,5 @@ public class TestLine {
         // Test getLength()
         System.out.printf("length is: %.2f%n", l1.getLength());
         //length is: 2.83
-
-        System.out.printf("Gradient is: %.2f%n", l1.getGradient());
-
     }
 }
