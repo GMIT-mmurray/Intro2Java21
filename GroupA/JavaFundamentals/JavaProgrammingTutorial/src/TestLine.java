@@ -49,5 +49,7 @@ public class TestLine {
         // Test getLength()
         System.out.printf("length is: %.2f%n", l1.getLength());
         //length is: 2.83
+        // Test get slope in radians
+        System.out.printf("Slope is: %.2f%n radians", l1.getGradient());
     }
 }
