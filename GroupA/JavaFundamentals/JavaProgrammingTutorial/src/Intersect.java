@@ -1,7 +1,7 @@
 public class Intersect {
     // Given three colinear points p, q, r, the function checks if
 // point q lies on line segment 'pr'
-   boolean onSegment(Point p, Point q, Point r)
+    private boolean onSegment(Point p, Point q, Point r)
     {
         if (q.getX() <= Math.max(p.getX(), r.getX()) && q.getX() >= Math.min(p.getX(), r.getX()) &&
                 q.getY() <= Math.max(p.getY(), r.getY()) && q.getY() >= Math.min(p.getY(), r.getY()))
@@ -15,7 +15,7 @@ public class Intersect {
 // 0 --> p, q and r are colinear
 // 1 --> Clockwise
 // 2 --> Counterclockwise
-    int orientation(Point p, Point q, Point r)   {
+    private int orientation(Point p, Point q, Point r)   {
         // See https://www.geeksforgeeks.org/orientation-3-ordered-points/
         // for details of below formula.
         int val = (q.getY() - p.getY()) * (r.getX() - q.getX() -
@@ -28,7 +28,7 @@ public class Intersect {
 
     // The main function that returns true if line segment 'p1q1'
 // and 'p2q2' intersect.
-    boolean doIntersect(Point p1, Point q1, Point p2, Point q2)
+    public boolean doIntersect(Point p1, Point q1, Point p2, Point q2)
     {
         // Find the four orientations needed for general and
         // special cases

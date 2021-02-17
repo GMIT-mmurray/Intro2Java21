@@ -50,6 +50,38 @@ public class TestLine {
         System.out.printf("length is: %.2f%n", l1.getLength());
         //length is: 2.83
         // Test get slope in radians
-        System.out.printf("Slope is: %.2f%n radians", l1.getGradient());
+        System.out.printf("Slope is: %.2f radians %n", l1.getGradient());
+        System.out.printf("Slope is: %.2f radians %n", l2.getGradient());
+
+        Point p1 = new Point(1, 1);
+        Point q1 = new Point(10, 1);
+        Point p2 = new Point(1, 2);
+        Point q2 = new Point(10, 2);
+
+        if(l1.doIntersect(p1, q1, p2, q2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+        p1 = new Point(10, 1);
+        q1 = new Point(0, 10);
+        p2 = new Point(0, 0);
+        q2 = new Point(10, 10);
+
+        if(l2.doIntersect(p1, q1, p2, q2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+        if(l2.doIntersect(p2, q2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+        if(l1.doIntersect(p1, q1))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
     }
 }

@@ -5,6 +5,7 @@ public class TestIntersect {
     public static void main(String[] args)
     {
         Intersect intersect = new Intersect();
+
         Point p1 = new Point(1, 1);
         Point q1 = new Point(10, 1);
         Point p2 = new Point(1, 2);
