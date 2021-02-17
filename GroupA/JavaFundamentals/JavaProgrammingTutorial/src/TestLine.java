@@ -83,5 +83,11 @@ public class TestLine {
         else
             System.out.println("No");
 
+        if(l1.doIntersect(l2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+
     }
 }
