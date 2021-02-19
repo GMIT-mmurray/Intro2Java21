@@ -67,5 +67,10 @@ public class TestLine {
         else
             System.out.println("No");
 
+        if(l1.doIntersect(new Line(new Point(35,76), new Point(76,35))))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
     }
 }
