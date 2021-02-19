@@ -52,5 +52,20 @@ public class TestLine {
 
         System.out.printf("Gradient is: %.2f%n", l1.getGradient());
 
+        Point p1 = new Point(1, 1);
+        Point q1 = new Point(10, 1);
+        Point p2 = new Point(1, 2);
+        Point q2 = new Point(10, 2);
+
+        if(l1.doIntersect( p2, q2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+        if(l1.doIntersect(l2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
     }
 }
