@@ -8,8 +8,8 @@ public class Point {
     // The constructors (overloaded)
     /** Construct a Point instance with the default values */
     public Point() {  // The default constructor
-        this.x = 0;
-        this.y = 0;
+        x = 0;
+        y = 0;
     }
     /** Construct a Point instance with the given x and y values */
     public Point(int x, int y) {
@@ -20,7 +20,7 @@ public class Point {
     // The public getters and setters
     /** Returns the value of x */
     public int getX() {
-        return this.x;
+        return x;
     }
     /** Sets the value of x */
     public void setX(int x) {
@@ -28,7 +28,7 @@ public class Point {
     }
     /** Returns the value of y */
     public int getY() {
-        return this.y;
+        return y;
     }
     /** Sets the value of y */
     public void setY(int y) {

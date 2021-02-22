@@ -41,7 +41,8 @@ public class Cylinder extends Circle2 {
     }
 
     /** Returns a self-descriptive String */
+    @Override
     public String toString() {
-        return "This is a Cylinder";  // to be refined later
+        return "This is a Cylinder" + super.toString();  // to be refined later
     }
 }

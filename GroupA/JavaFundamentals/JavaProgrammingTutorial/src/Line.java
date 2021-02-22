@@ -77,7 +77,15 @@ public class Line {
 
     /** Returns the length of this line */
     public double getLength() {
-        return begin.distance(end);  // use Point's distance() method
+
+       // return begin.distance(end);  // use Point's distance() method
+
+        System.out.println("length from begin to (0,0 "+  begin.distance());
+        System.out.println("length from end to (0,0 "+ end.distance());
+
+        int xDiff = getBeginX() - getEndX();
+        int yDiff = getBeginY() - getEndY();
+        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
     }
 
     /** Returns the slope of a line in Radians */

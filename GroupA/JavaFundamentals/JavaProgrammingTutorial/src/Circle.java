@@ -75,6 +75,9 @@ public class Circle {
     /** Returns the distance from the center of this circle to the center of
      the given Circle instance called another */
     public double distance(Circle another) {
-        return center.distance(another.center);  // Use distance() of the Point class
+        //return center.distance(another.center);  // Use distance() of the Point class
+        int xDiff =getCenterX() - another.getCenterX();
+        int yDiff = getCenterY() - another.getCenterY();
+        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
     }
 }
