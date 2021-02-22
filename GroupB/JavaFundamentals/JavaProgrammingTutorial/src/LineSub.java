@@ -39,7 +39,7 @@ public class LineSub extends Point {  // Inherited the begin point
         return super.getX();  // inherited, super is optional
     }
     public void setBeginX(int x) {
-        super.setX(x);        // inherited, super is optional
+        setX(x);        // inherited, super is optional
     }
     public int getBeginY() {
         return super.getY();

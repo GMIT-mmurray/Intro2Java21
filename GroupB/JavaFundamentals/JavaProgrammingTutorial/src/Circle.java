@@ -10,8 +10,8 @@ public class Circle {
     // Constructors
     /** Constructs a Circle instance with the default values */
     public Circle() {
-        this.center = new Point(); // Construct a Point at (0,0)
-        this.radius = 1.0;
+        center = new Point(); // Construct a Point at (0,0)
+        radius = 1.0;
     }
     /** Constructs a Circle instance with the center at (xCenter, yCenter) and radius */
     public Circle(int xCenter, int yCenter, double radius) {
@@ -75,6 +75,10 @@ public class Circle {
     /** Returns the distance from the center of this circle to the center of
      the given Circle instance called another */
     public double distance(Circle another) {
+       // int xDiff = getCenterX() - another.getCenterX();
+       // int yDiff = getCenterY() - another.getCenterY();
+       // return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
+
         return center.distance(another.center);  // Use distance() of the Point class
     }
 }

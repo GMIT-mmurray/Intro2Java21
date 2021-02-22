@@ -76,8 +76,13 @@ public class Line {
 
     /** Returns the length of this line */
     public double getLength() {
-        return begin.distance(end);  // use Point's distance() method
+   //     return begin.distance(end);  // use Point's distance() method
+        int xDiff =  getBeginX()-getEndX();
+        int yDiff =  getBeginY()-getEndY();
+        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
     }
+
+
 
     public double getGradient() {
         //return Math.atan((end.getY() - begin.getY()) / (end.getX() - begin.getX()));
