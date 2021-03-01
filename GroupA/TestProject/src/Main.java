@@ -1,23 +1,26 @@
 import java.util.Date;
+import java.util.StringTokenizer;
 
+/**
+ * Reverse the words in a String using StringTokenizer
+ */
 public class Main {
-
     public static void main(String[] args) {
-
-        Fan f1 = new Fan();
-        Fan f2 = new Fan();
-
-        f1.setSpeed(Fan.FAST);
-        f1.setRadius(10);
-        f1.setColor("yellow");
-        f1.setOn(true);
-
-        f2.setSpeed(Fan.MEDIUM);
-        f2.setRadius(5);
-        f2.setColor("blue");
-        f2.setOn(false);
-
-        System.out.println(f1);
-        System.out.println(f2);
+        String str = "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday";
+        String[] tokens = str.split(",");  // white space '\s' as delimiter
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < tokens.length; ++i) {
+            sb.insert(0, tokens[i]);
+            if (i < tokens.length - 1) {
+                sb.insert(0, " ");
+            }
+        }
+        String strReverse = sb.toString();
+        System.out.println(strReverse);
     }
 }
+
+
+
+
+

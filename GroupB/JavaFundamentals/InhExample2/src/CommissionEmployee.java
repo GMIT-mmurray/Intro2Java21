@@ -3,9 +3,9 @@
 // private instance variables.
 public class CommissionEmployee
 {
-   private final String firstName;                              
-   private final String lastName;                               
-   private final String socialSecurityNumber;                   
+   private final String firstName;
+   private final String lastName;
+   private final String socialSecurityNumber;
    private double grossSales; // gross weekly sales       
    private double commissionRate; // commission percentage
 
@@ -14,6 +14,7 @@ public class CommissionEmployee
       String socialSecurityNumber, double grossSales, 
       double commissionRate)
    {
+
       // implicit call to Object constructor occurs here
 
       // if grossSales is invalid throw exception

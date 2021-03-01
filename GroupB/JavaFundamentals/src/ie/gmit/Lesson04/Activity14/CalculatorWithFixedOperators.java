@@ -8,6 +8,7 @@ public class CalculatorWithFixedOperators {
   // The current operator
   private final Operator operator;
 
+
   public CalculatorWithFixedOperators(double operand1, double operand2, String operator) {
     this.operand1 = operand1;
     this.operand2 = operand2;

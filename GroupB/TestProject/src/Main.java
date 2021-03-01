@@ -1,21 +1,20 @@
+import java.util.StringTokenizer;
+
 public class Main {
 
     public static void main(String[] args) {
-        Fan f1 = new Fan();
-        Fan f2 = new Fan();
+        String str = "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday";
+        String strReverse;
+        StringBuilder sb = new StringBuilder();
+        StringTokenizer st = new StringTokenizer(str, ",");
 
-        f1.setSpeed(Fan.FAST);
-        f1.setRadius(10);
-        f1.setColor("yellow");
-        f1.setOn(true);
-
-        f2.setSpeed(Fan.MEDIUM);
-        f2.setRadius(5);
-        f2.setColor("blue");
-        f2.setOn(false);
-
-        System.out.println(f1);
-        System.out.println(f2.toString());
-
+        while (st.hasMoreTokens()) {
+            sb.insert(0, st.nextToken(","));
+            if (st.hasMoreTokens()) {
+                sb.insert(0, "---");
+            }
+        }
+        strReverse = sb.toString();
+        System.out.println(strReverse);
     }
 }

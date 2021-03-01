@@ -5,7 +5,8 @@ import java.util.Date;
 public class Test {
     public static void main(String[] args) {
 
-        CalculatorWithFixedOperators c = new CalculatorWithFixedOperators(1, 1, "+");
+        CalculatorWithFixedOperators c =
+                      new CalculatorWithFixedOperators(1, 1, "+");
         Double result = c.operate();
         System.out.println("1 + 1 = " + result);
 
